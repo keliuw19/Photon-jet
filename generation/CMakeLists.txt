@@ -42,7 +42,7 @@ target_link_libraries(generation ${Geant4_LIBRARIES})
 # build B4a. This is so that we can run the executable directly because it
 # relies on these scripts being in the current working directory.
 #
-#set(EXAMPLEB4A_SCRIPTS
+set(EXAMPLEB4A_SCRIPTS
 #  exampleB4a.out
 #  exampleB4.in
 #  gui.mac
@@ -50,17 +50,17 @@ target_link_libraries(generation ${Geant4_LIBRARIES})
 #  plotHisto.C
 #  plotNtuple.C
 #  run1.mac
-#  run2.mac
+  run2.mac
 #  vis.mac
-#  )
+  )
 #
-#foreach(_script ${EXAMPLEB4A_SCRIPTS})
-#  configure_file(
-#    ${PROJECT_SOURCE_DIR}/${_script}
-#    ${PROJECT_BINARY_DIR}/${_script}
-#    COPYONLY
-#    )
-#endforeach()
+foreach(_script ${EXAMPLEB4A_SCRIPTS})
+  configure_file(
+    ${PROJECT_SOURCE_DIR}/${_script}
+    ${PROJECT_BINARY_DIR}/${_script}
+    COPYONLY
+    )
+endforeach()
 
 #----------------------------------------------------------------------------
 # Install the executable to 'bin' directory under CMAKE_INSTALL_PREFIX
