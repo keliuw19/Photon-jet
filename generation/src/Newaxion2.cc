@@ -48,9 +48,9 @@ Newaxion2* Newaxion2::axion2Definition(G4double mass)
    {
      theaxion2 = new Newaxion2(
 				        "axion2",             mass,                   0,       0, 
-				                                 0,                  -1,       -1,          
+				                                 0,                  -1,       +1,          
 					                         0,                   0,        0,             
-					                   "boson",                   0,        0,           1036,
+					                   "boson",                   0,        0,           10036,
 					                      false,                   0,     NULL);
      
      //create Decay Table

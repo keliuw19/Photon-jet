@@ -1,4 +1,4 @@
-#include "Newaxion1.hh"
+#include "Newscalar1.hh"
 #include "G4ParticleTable.hh"
 #include "G4PhysicalConstants.hh"
 #include "G4SystemOfUnits.hh"
@@ -6,11 +6,11 @@
 #include "G4VDecayChannel.hh"
 #include "G4PhaseSpaceDecayChannel.hh"
  
-Newaxion1* Newaxion1::theaxion1 = nullptr;
+Newscalar1* Newscalar1::thescalar1 = nullptr;
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-Newaxion1::Newaxion1(
+Newscalar1::Newscalar1(
 			          const G4String&     aName,        G4double            mass,
 			          G4double            width,        G4double            charge,   
 			          G4int               iSpin,        G4int               iParity,    
@@ -27,7 +27,7 @@ Newaxion1::Newaxion1(
   
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
  
-Newaxion1::~Newaxion1()
+Newscalar1::~Newscalar1()
 {
 }
 
@@ -42,35 +42,35 @@ Newaxion1::~Newaxion1()
 //
 //
 
-Newaxion1* Newaxion1::axion1Definition(G4double mass)
+Newscalar1* Newscalar1::scalar1Definition(G4double mass)
 {    
-   if(!theaxion1) 
+   if(!thescalar1) 
    {
-     theaxion1 = new Newaxion1(
-				        "axion1",             mass,                   0,       0, 
-				                                 0,                  -1,       +1,          
+     thescalar1 = new Newscalar1(
+				         "scalar1",           mass,                   0,       0, 
+				                                 0,                  +1,       +1,          
 					                         0,                   0,        0,             
-					                   "boson",                   0,        0,           1036,
+					                   "boson",                   0,        0,           1035,
 					                      false,                   0,     NULL);
      
      //create Decay Table
      G4DecayTable* table = new G4DecayTable();
 
      // create decay channel
-     G4VDecayChannel* mode = new G4PhaseSpaceDecayChannel("axion1", 1.0, 2, "gamma", "gamma");
+     G4VDecayChannel* mode = new G4PhaseSpaceDecayChannel("scalar1", 1.0, 2, "pi0", "pi0");
      table->Insert(mode);
 
-     theaxion1->SetDecayTable(table);
+     thescalar1->SetDecayTable(table);
      
-     G4cout << "axion1 is created: m(MeV)= " 
-            << theaxion1->GetPDGMass()/MeV << G4endl;
+     G4cout << "scalar1 is created: m(MeV)= " 
+            << thescalar1->GetPDGMass()/MeV << G4endl;
   }
-  return theaxion1;
+  return thescalar1;
 }
  
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-Newaxion1* Newaxion1::axion1()
+Newscalar1* Newscalar1::scalar1()
 {    
-   return theaxion1;
+   return thescalar1;
 } 
