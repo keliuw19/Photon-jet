@@ -33,11 +33,12 @@
 
 #include "G4VUserPrimaryGeneratorAction.hh"
 #include "globals.hh"
-#include "G4GeneralParticleSource.hh"
+//#include "G4GeneralParticleSource.hh"
 
 
 class G4ParticleGun;
 class G4Event;
+class PhotonJetPrimaryGenerator;
 
 /// The primary generator action class with particle gum.
 ///
@@ -59,7 +60,8 @@ public:
 
 private:
   G4ParticleGun*  fParticleGun; // G4 particle gun
-  G4GeneralParticleSource * m_particleSource;
+  //G4GeneralParticleSource * m_particleSource;
+  PhotonJetPrimaryGenerator* fPrimaryGenerator;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

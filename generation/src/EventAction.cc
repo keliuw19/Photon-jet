@@ -83,14 +83,40 @@ void EventAction::BeginOfEventAction(const G4Event* /*event*/)
 
 void EventAction::EndOfEventAction(const G4Event* event)
 {
-  G4PrimaryVertex* primaryVertex = event->GetPrimaryVertex();
-  G4PrimaryParticle* primaryParticle = primaryVertex->GetPrimary();
-  G4double ke = primaryParticle->GetKineticEnergy()/1000.; //in GeV.
-
+	G4cout<<"EndofEventAction"<<G4endl;
   RunData* runData 
     = static_cast<RunData*>(
         G4RunManager::GetRunManager()->GetNonConstCurrentRun());
+  G4PrimaryVertex* primaryVertex = event->GetPrimaryVertex();
+  G4PrimaryParticle* primaryParticle = primaryVertex->GetPrimary();
+  G4double ke = primaryParticle->GetKineticEnergy()/1000.; //in GeV.
+  G4double px_mom = primaryParticle->GetPx()/1000.; //in GeV.
+  G4double py_mom = primaryParticle->GetPy()/1000.; //in GeV.
+  G4double pz_mom = primaryParticle->GetPz()/1000.; //in GeV.
+  G4int pdg_mom=primaryParticle->GetPDGcode();
+  G4cout<<primaryParticle->pdg_mom<<G4endl;
+
+  G4PrimaryParticle* dau = primaryParticle->GetDaughter();
+  if(dau!=nullptr){
+  G4double ke_dau1 = dau->GetKineticEnergy()/1000.; //in GeV.
+  G4double px_dau1 = dau->GetPx()/1000.; //in GeV.
+  G4double py_dau1 = dau->GetPy()/1000.; //in GeV.
+  G4double pz_dau1 = dau->GetPz()/1000.; //in GeV.
+  G4int pdg_dau1=dau->GetPDGcode();
+
+  runData->SetDaughter1(ke_dau1,px_dau1,py_dau1,pz_dau1,pdg_dau1);
+  if(dau->GetNext()!=nullptr){
+  G4double ke_dau2 = dau->GetNext()->GetKineticEnergy()/1000.; //in GeV.
+  G4double px_dau2 = dau->GetNext()->GetPx()/1000.; //in GeV.
+  G4double py_dau2 = dau->GetNext()->GetPy()/1000.; //in GeV.
+  G4double pz_dau2 = dau->GetNext()->GetPz()/1000.; //in GeV.
+  G4int pdg_dau2=dau->GetNext()->GetPDGcode();
+  runData->SetDaughter2(ke_dau2,px_dau2,py_dau2,pz_dau2,pdg_dau2);
+  }
+  }
+
   runData->SetTotalEnergy(ke);
+  runData->SetMomentum(px_mom,py_mom,pz_mom,pdg_mom);
   runData->FillPerEvent();
   
   //print per event (modulo n)

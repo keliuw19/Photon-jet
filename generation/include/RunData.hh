@@ -72,13 +72,61 @@ public:
   // G4String  GetVolumeName(G4int id) const;
   G4double  GetEdep(G4int id) const;
   G4double GetTotalEnergy(){return TotalEnergy;};
+  G4double GetPx_Mom(){return px_mom;};
+  G4double GetPy_Mom(){return py_mom;};
+  G4double GetPz_Mom(){return pz_mom;};
+  G4double GetPDG_Mom(){return pdg_mom;};
+  G4double GetKe_Dau1(){return ke_dau1;};
+  G4double GetPx_Dau1(){return px_dau1;};
+  G4double GetPy_Dau1(){return py_dau1;};
+  G4double GetPz_Dau1(){return pz_dau1;};
+  G4double GetPDG_Dau1(){return pdg_dau1;};
+  G4double GetKe_Dau2(){return ke_dau2;};
+  G4double GetPx_Dau2(){return px_dau2;};
+  G4double GetPy_Dau2(){return py_dau2;};
+  G4double GetPz_Dau2(){return pz_dau2;};
+  G4double GetPDG_Dau2(){return pdg_dau2;};
   void SetTotalEnergy(G4double e){TotalEnergy = e;};
+  void SetMomentum(G4double px, G4double py, G4double pz, G4int pdg){
+	  px_mom= px;
+	  py_mom= py;
+	  pz_mom= pz;
+	  pdg_mom= pdg;
+  };
+  void SetDaughter1(G4double ke, G4double px, G4double py, G4double pz, G4int pdg){
+	  ke_dau1= ke;
+	  px_dau1= px;
+	  py_dau1= py;
+	  pz_dau1= pz;
+	  pdg_dau1=pdg;
+  };
+  void SetDaughter2(G4double ke, G4double px, G4double py, G4double pz, G4int pdg){
+	  ke_dau2= ke;
+	  px_dau2= px;
+	  py_dau2= py;
+	  pz_dau2= pz;
+	  pdg_dau2=pdg;
+  };
   // G4double  GetTrackLength(G4int id) const; 
 
 private:
   // G4String  fVolumeNames[kDim];
   G4double  fEdep[kNumCells];
   G4double TotalEnergy;
+  G4double px_mom;
+  G4double py_mom;
+  G4double pz_mom;
+  G4double pdg_mom;
+  G4double ke_dau1;
+  G4double px_dau1;
+  G4double py_dau1;
+  G4double pz_dau1;
+  G4double pdg_dau1;
+  G4double ke_dau2;
+  G4double px_dau2;
+  G4double py_dau2;
+  G4double pz_dau2;
+  G4double pdg_dau2;
   // G4double  fTrackLength[kDim];
 };
 
