@@ -88,6 +88,10 @@ G4SystemOfUnits.hh
 globals.hh
 ../generation/include/globals.hh
 
+../generation/include/PhotonJetTruthParticle.hh
+G4ThreeVector.hh
+../generation/include/G4ThreeVector.hh
+
 ../generation/include/PrimaryGeneratorAction.hh
 G4VUserPrimaryGeneratorAction.hh
 ../generation/include/G4VUserPrimaryGeneratorAction.hh
@@ -4503,6 +4507,8 @@ DetectorConstruction.hh
 /home/Ke-Li/Photon-jet/generation/DetectorConstruction.hh
 ActionInitialization.hh
 /home/Ke-Li/Photon-jet/generation/ActionInitialization.hh
+PhotonJetPhysicsList.hh
+/home/Ke-Li/Photon-jet/generation/PhotonJetPhysicsList.hh
 G4MTRunManager.hh
 /home/Ke-Li/Photon-jet/generation/G4MTRunManager.hh
 G4RunManager.hh
@@ -4715,6 +4721,10 @@ CLHEP/Units/PhysicalConstants.h
 /home/Ke-Li/Photon-jet/generation/src/CLHEP/Units/PhysicalConstants.h
 G4Event.hh
 /home/Ke-Li/Photon-jet/generation/src/G4Event.hh
+
+/home/Ke-Li/Photon-jet/generation/src/PhotonJetTruthParticle.cc
+PhotonJetTruthParticle.hh
+/home/Ke-Li/Photon-jet/generation/src/PhotonJetTruthParticle.hh
 
 /home/Ke-Li/Photon-jet/generation/src/PrimaryGeneratorAction.cc
 PrimaryGeneratorAction.hh

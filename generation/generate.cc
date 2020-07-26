@@ -30,6 +30,7 @@
 
 #include "DetectorConstruction.hh"
 #include "ActionInitialization.hh"
+#include "PhotonJetPhysicsList.hh"
 
 #ifdef G4MULTITHREADED
 #include "G4MTRunManager.hh"
@@ -118,7 +119,8 @@ int main(int argc,char** argv)
   DetectorConstruction* detConstruction = new DetectorConstruction();
   runManager->SetUserInitialization(detConstruction);
 
-  G4VModularPhysicsList* physicsList = new FTFP_BERT;
+  G4VModularPhysicsList* physicsList = new PhotonJetPhysicsList();
+  //G4VModularPhysicsList* physicsList = new FTFP_BERT; PhotonJetPhysicsList* physicsList = new FTFP_BERT<PhotonJetPhysicsList>();
   runManager->SetUserInitialization(physicsList);
     
   ActionInitialization* actionInitialization

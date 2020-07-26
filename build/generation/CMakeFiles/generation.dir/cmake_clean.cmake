@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/generation.dir/src/PhotonJetPhysicsList.cc.o"
   "CMakeFiles/generation.dir/src/PhotonJetPhysicsMessenger.cc.o"
   "CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o"
+  "CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o"
   "CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o"
   "CMakeFiles/generation.dir/src/RunAction.cc.o"
   "CMakeFiles/generation.dir/src/RunData.cc.o"

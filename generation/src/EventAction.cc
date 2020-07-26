@@ -83,7 +83,6 @@ void EventAction::BeginOfEventAction(const G4Event* /*event*/)
 
 void EventAction::EndOfEventAction(const G4Event* event)
 {
-	G4cout<<"EndofEventAction"<<G4endl;
   RunData* runData 
     = static_cast<RunData*>(
         G4RunManager::GetRunManager()->GetNonConstCurrentRun());
@@ -94,7 +93,8 @@ void EventAction::EndOfEventAction(const G4Event* event)
   G4double py_mom = primaryParticle->GetPy()/1000.; //in GeV.
   G4double pz_mom = primaryParticle->GetPz()/1000.; //in GeV.
   G4int pdg_mom=primaryParticle->GetPDGcode();
-  G4cout<<primaryParticle->pdg_mom<<G4endl;
+  G4double mass=primaryParticle->GetMass();
+  G4cout<<pdg_mom<<" "<<ke<<" "<<px_mom<<" "<<py_mom<<" "<<pz_mom<<" "<<mass<<G4endl;
 
   G4PrimaryParticle* dau = primaryParticle->GetDaughter();
   if(dau!=nullptr){

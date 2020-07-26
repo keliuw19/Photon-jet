@@ -4,6 +4,9 @@
 generation/CMakeFiles/generation.dir/generate.cc.o
  ../generation/include/ActionInitialization.hh
  ../generation/include/DetectorConstruction.hh
+ ../generation/include/Newaxion1.hh
+ ../generation/include/Newaxion2.hh
+ ../generation/include/PhotonJetPhysicsList.hh
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Geometry/Normal3D.h
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Geometry/Plane3D.h
@@ -227,6 +230,7 @@ generation/CMakeFiles/generation.dir/generate.cc.o
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4SteppingManager.hh
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4String.hh
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4String.icc
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4SystemOfUnits.hh
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4THitsCollection.hh
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4THitsMap.hh
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4ThreadLocalSingleton.hh
@@ -1715,6 +1719,25 @@ generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/trajectoryControl.hh
  /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/trkdefs.hh
  /home/Ke-Li/Photon-jet/generation/src/PhotonJetPrimaryGenerator.cc
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o
+ ../generation/include/PhotonJetTruthParticle.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Utility/defs.h
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4EnvironmentUtils.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4Exception.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4ExceptionSeverity.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4GlobalConfig.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4String.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4String.icc
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4ThreeVector.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4Types.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4VExceptionHandler.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4ios.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/globals.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/templates.hh
+ /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/tls.hh
+ /home/Ke-Li/Photon-jet/generation/src/PhotonJetTruthParticle.cc
 generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o
  ../generation/include/PhotonJetPrimaryGenerator.hh
  ../generation/include/PrimaryGeneratorAction.hh

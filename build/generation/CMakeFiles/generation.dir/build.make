@@ -345,9 +345,33 @@ generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o.provides
 generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o.provides.build: generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o
 
 
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: generation/CMakeFiles/generation.dir/flags.make
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: ../generation/src/PhotonJetTruthParticle.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o"
+	cd /home/Ke-Li/Photon-jet/build/generation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o -c /home/Ke-Li/Photon-jet/generation/src/PhotonJetTruthParticle.cc
+
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.i"
+	cd /home/Ke-Li/Photon-jet/build/generation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Ke-Li/Photon-jet/generation/src/PhotonJetTruthParticle.cc > CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.i
+
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.s"
+	cd /home/Ke-Li/Photon-jet/build/generation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Ke-Li/Photon-jet/generation/src/PhotonJetTruthParticle.cc -o CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.s
+
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o.requires:
+
+.PHONY : generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o.requires
+
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o.provides: generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o.requires
+	$(MAKE) -f generation/CMakeFiles/generation.dir/build.make generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o.provides.build
+.PHONY : generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o.provides
+
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o.provides.build: generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o
+
+
 generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o: generation/CMakeFiles/generation.dir/flags.make
 generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o: ../generation/src/PrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o"
 	cd /home/Ke-Li/Photon-jet/build/generation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o -c /home/Ke-Li/Photon-jet/generation/src/PrimaryGeneratorAction.cc
 
 generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
@@ -371,7 +395,7 @@ generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o.provides.bu
 
 generation/CMakeFiles/generation.dir/src/RunAction.cc.o: generation/CMakeFiles/generation.dir/flags.make
 generation/CMakeFiles/generation.dir/src/RunAction.cc.o: ../generation/src/RunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object generation/CMakeFiles/generation.dir/src/RunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object generation/CMakeFiles/generation.dir/src/RunAction.cc.o"
 	cd /home/Ke-Li/Photon-jet/build/generation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/generation.dir/src/RunAction.cc.o -c /home/Ke-Li/Photon-jet/generation/src/RunAction.cc
 
 generation/CMakeFiles/generation.dir/src/RunAction.cc.i: cmake_force
@@ -395,7 +419,7 @@ generation/CMakeFiles/generation.dir/src/RunAction.cc.o.provides.build: generati
 
 generation/CMakeFiles/generation.dir/src/RunData.cc.o: generation/CMakeFiles/generation.dir/flags.make
 generation/CMakeFiles/generation.dir/src/RunData.cc.o: ../generation/src/RunData.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object generation/CMakeFiles/generation.dir/src/RunData.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object generation/CMakeFiles/generation.dir/src/RunData.cc.o"
 	cd /home/Ke-Li/Photon-jet/build/generation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/generation.dir/src/RunData.cc.o -c /home/Ke-Li/Photon-jet/generation/src/RunData.cc
 
 generation/CMakeFiles/generation.dir/src/RunData.cc.i: cmake_force
@@ -419,7 +443,7 @@ generation/CMakeFiles/generation.dir/src/RunData.cc.o.provides.build: generation
 
 generation/CMakeFiles/generation.dir/src/SteppingAction.cc.o: generation/CMakeFiles/generation.dir/flags.make
 generation/CMakeFiles/generation.dir/src/SteppingAction.cc.o: ../generation/src/SteppingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object generation/CMakeFiles/generation.dir/src/SteppingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object generation/CMakeFiles/generation.dir/src/SteppingAction.cc.o"
 	cd /home/Ke-Li/Photon-jet/build/generation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/generation.dir/src/SteppingAction.cc.o -c /home/Ke-Li/Photon-jet/generation/src/SteppingAction.cc
 
 generation/CMakeFiles/generation.dir/src/SteppingAction.cc.i: cmake_force
@@ -455,6 +479,7 @@ generation_OBJECTS = \
 "CMakeFiles/generation.dir/src/PhotonJetPhysicsList.cc.o" \
 "CMakeFiles/generation.dir/src/PhotonJetPhysicsMessenger.cc.o" \
 "CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o" \
+"CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o" \
 "CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o" \
 "CMakeFiles/generation.dir/src/RunAction.cc.o" \
 "CMakeFiles/generation.dir/src/RunData.cc.o" \
@@ -475,6 +500,7 @@ generation/generation: generation/CMakeFiles/generation.dir/src/PhotonJetGenerat
 generation/generation: generation/CMakeFiles/generation.dir/src/PhotonJetPhysicsList.cc.o
 generation/generation: generation/CMakeFiles/generation.dir/src/PhotonJetPhysicsMessenger.cc.o
 generation/generation: generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o
+generation/generation: generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o
 generation/generation: generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o
 generation/generation: generation/CMakeFiles/generation.dir/src/RunAction.cc.o
 generation/generation: generation/CMakeFiles/generation.dir/src/RunData.cc.o
@@ -511,7 +537,7 @@ generation/generation: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/
 generation/generation: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/lib/libG4global.so
 generation/generation: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/lib/libG4clhep.so
 generation/generation: generation/CMakeFiles/generation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable generation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Ke-Li/Photon-jet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable generation"
 	cd /home/Ke-Li/Photon-jet/build/generation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/generation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -531,6 +557,7 @@ generation/CMakeFiles/generation.dir/requires: generation/CMakeFiles/generation.
 generation/CMakeFiles/generation.dir/requires: generation/CMakeFiles/generation.dir/src/PhotonJetPhysicsList.cc.o.requires
 generation/CMakeFiles/generation.dir/requires: generation/CMakeFiles/generation.dir/src/PhotonJetPhysicsMessenger.cc.o.requires
 generation/CMakeFiles/generation.dir/requires: generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o.requires
+generation/CMakeFiles/generation.dir/requires: generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o.requires
 generation/CMakeFiles/generation.dir/requires: generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o.requires
 generation/CMakeFiles/generation.dir/requires: generation/CMakeFiles/generation.dir/src/RunAction.cc.o.requires
 generation/CMakeFiles/generation.dir/requires: generation/CMakeFiles/generation.dir/src/RunData.cc.o.requires

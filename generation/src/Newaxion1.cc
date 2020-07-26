@@ -64,6 +64,9 @@ Newaxion1* Newaxion1::axion1Definition(G4double mass)
      
      G4cout << "axion1 is created: m(MeV)= " 
             << theaxion1->GetPDGMass()/MeV << G4endl;
+     G4cout << "axion1 is created: PDG)= " 
+            << theaxion1->GetPDGEncoding()<<" ; "<<theaxion1->GetParticleType() << G4endl;
+     theaxion1->DumpTable();
   }
   return theaxion1;
 }

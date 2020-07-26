@@ -495,6 +495,33 @@ src/PhotonJetPrimaryGenerator.cc.s:
 	cd /home/Ke-Li/Photon-jet/build && $(MAKE) -f generation/CMakeFiles/generation.dir/build.make generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.s
 .PHONY : src/PhotonJetPrimaryGenerator.cc.s
 
+src/PhotonJetTruthParticle.o: src/PhotonJetTruthParticle.cc.o
+
+.PHONY : src/PhotonJetTruthParticle.o
+
+# target to build an object file
+src/PhotonJetTruthParticle.cc.o:
+	cd /home/Ke-Li/Photon-jet/build && $(MAKE) -f generation/CMakeFiles/generation.dir/build.make generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o
+.PHONY : src/PhotonJetTruthParticle.cc.o
+
+src/PhotonJetTruthParticle.i: src/PhotonJetTruthParticle.cc.i
+
+.PHONY : src/PhotonJetTruthParticle.i
+
+# target to preprocess a source file
+src/PhotonJetTruthParticle.cc.i:
+	cd /home/Ke-Li/Photon-jet/build && $(MAKE) -f generation/CMakeFiles/generation.dir/build.make generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.i
+.PHONY : src/PhotonJetTruthParticle.cc.i
+
+src/PhotonJetTruthParticle.s: src/PhotonJetTruthParticle.cc.s
+
+.PHONY : src/PhotonJetTruthParticle.s
+
+# target to generate assembly for a file
+src/PhotonJetTruthParticle.cc.s:
+	cd /home/Ke-Li/Photon-jet/build && $(MAKE) -f generation/CMakeFiles/generation.dir/build.make generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.s
+.PHONY : src/PhotonJetTruthParticle.cc.s
+
 src/PrimaryGeneratorAction.o: src/PrimaryGeneratorAction.cc.o
 
 .PHONY : src/PrimaryGeneratorAction.o
@@ -652,6 +679,9 @@ help:
 	@echo "... src/PhotonJetPrimaryGenerator.o"
 	@echo "... src/PhotonJetPrimaryGenerator.i"
 	@echo "... src/PhotonJetPrimaryGenerator.s"
+	@echo "... src/PhotonJetTruthParticle.o"
+	@echo "... src/PhotonJetTruthParticle.i"
+	@echo "... src/PhotonJetTruthParticle.s"
 	@echo "... src/PrimaryGeneratorAction.o"
 	@echo "... src/PrimaryGeneratorAction.i"
 	@echo "... src/PrimaryGeneratorAction.s"

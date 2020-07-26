@@ -43,7 +43,6 @@
 RunAction::RunAction()
  : G4UserRunAction()
 { 
-	G4cout<<"StartofRunAction"<<G4endl;
   // set printing event number per each event
   G4RunManager::GetRunManager()->SetPrintProgress(1);     
 

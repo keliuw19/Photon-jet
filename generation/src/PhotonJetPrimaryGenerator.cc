@@ -11,7 +11,7 @@
 #include "CLHEP/Units/PhysicalConstants.h"
 #include "G4Event.hh"
 
-const G4String PhotonJetPrimaryGenerator::default_particleName = "Newaxion1";
+const G4String PhotonJetPrimaryGenerator::default_particleName = "axion1";
 
 PhotonJetPrimaryGenerator::PhotonJetPrimaryGenerator() 
 	: G4VPrimaryGenerator(), fGeneratorMessenger(nullptr), fDecayVolume(nullptr), fDetectorConstruction(nullptr)
@@ -67,10 +67,10 @@ void PhotonJetPrimaryGenerator::GeneratePrimaryVertex(G4Event* event)
 	G4PrimaryParticle* primary = new G4PrimaryParticle(particleDefinition, momentum.x(), momentum.y(), momentum.z());
 
 	// special logic to make dark photon decay point uniform over decay volume length
-	if (fParticleName == "Newaxion1")
+	if (fParticleName == "axion1")
 	{
 		G4double decayProperTime = (1.0-G4UniformRand())*primary->GetMass()*decayLength/(primary->GetTotalMomentum() * CLHEP::c_light);
-		//G4cout << "Proper time set for decay: " << decayProperTime / s << G4endl;
+		G4cout << "Proper time set for decay: " << decayProperTime / s << G4endl;
 		primary->SetProperTime(decayProperTime);
 	}
 	vertex->SetPrimary(primary);

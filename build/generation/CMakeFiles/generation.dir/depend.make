@@ -3,6 +3,9 @@
 
 generation/CMakeFiles/generation.dir/generate.cc.o: ../generation/include/ActionInitialization.hh
 generation/CMakeFiles/generation.dir/generate.cc.o: ../generation/include/DetectorConstruction.hh
+generation/CMakeFiles/generation.dir/generate.cc.o: ../generation/include/Newaxion1.hh
+generation/CMakeFiles/generation.dir/generate.cc.o: ../generation/include/Newaxion2.hh
+generation/CMakeFiles/generation.dir/generate.cc.o: ../generation/include/PhotonJetPhysicsList.hh
 generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Geometry/Normal3D.h
 generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Geometry/Plane3D.h
@@ -226,6 +229,7 @@ generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEA
 generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4SteppingManager.hh
 generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4String.hh
 generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4String.icc
+generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4SystemOfUnits.hh
 generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4THitsCollection.hh
 generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4THitsMap.hh
 generation/CMakeFiles/generation.dir/generate.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4ThreadLocalSingleton.hh
@@ -1714,6 +1718,25 @@ generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o: /home/C
 generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/trajectoryControl.hh
 generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/trkdefs.hh
 generation/CMakeFiles/generation.dir/src/PhotonJetPrimaryGenerator.cc.o: ../generation/src/PhotonJetPrimaryGenerator.cc
+
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: ../generation/include/PhotonJetTruthParticle.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Utility/defs.h
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.h
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4EnvironmentUtils.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4Exception.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4ExceptionSeverity.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4GlobalConfig.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4String.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4String.icc
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4ThreeVector.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4Types.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4VExceptionHandler.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/G4ios.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/globals.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/templates.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: /home/Chih-Ting/software/GEANT4/geant4.10.06.p01-install/include/Geant4/tls.hh
+generation/CMakeFiles/generation.dir/src/PhotonJetTruthParticle.cc.o: ../generation/src/PhotonJetTruthParticle.cc
 
 generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o: ../generation/include/PhotonJetPrimaryGenerator.hh
 generation/CMakeFiles/generation.dir/src/PrimaryGeneratorAction.cc.o: ../generation/include/PrimaryGeneratorAction.hh
