@@ -12,7 +12,7 @@
 #
 /run/printProgress 1
 /run/verbose 2
-/PhotonJet/generator/particleName Newaxion1
+/PhotonJet/generator/particleName axion1
 /PhotonJet/generator/dump
 /PhotonJet/physics/setDarkPhotonMass 10
 #/gun/particle e-
