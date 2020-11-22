@@ -1,23 +1,19 @@
-#ifndef PhotonJetPhysicsList_hh
-#define PhotonJetPhysicsList_hh 1
+#ifndef PhotonJetPhysics_hh
+#define PhotonJetPhysics_hh 1
 
-#include "G4VModularPhysicsList.hh"
+#include "G4VPhysicsConstructor.hh"
 #include "G4SystemOfUnits.hh"
 #include "globals.hh"
 
 #include "Newaxion1.hh"
-#include "Newaxion2.hh"
-class PhotonJetPhysicsMessenger;
 
-class PhotonJetPhysicsList : public G4VModularPhysicsList
+class PhotonJetPhysics: public G4VPhysicsConstructor
 {
 	public:
-		PhotonJetPhysicsList();
-		virtual ~PhotonJetPhysicsList();
+		PhotonJetPhysics();
+		virtual ~PhotonJetPhysics();
 
 		virtual void ConstructParticle();
-
-		virtual void SetCuts();
 
 		virtual void ConstructProcess();
 
@@ -28,7 +24,7 @@ class PhotonJetPhysicsList : public G4VModularPhysicsList
 
 	private:
 		G4double fDarkPhotonMass;
-		PhotonJetPhysicsMessenger* fPhysicsMessenger;
+		G4VPhysicsConstructor*  fDecayPhysicsList;
 
 };
 #endif

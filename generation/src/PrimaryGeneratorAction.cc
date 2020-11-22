@@ -40,18 +40,15 @@
 #include "G4ParticleDefinition.hh"
 #include "G4SystemOfUnits.hh"
 #include "Randomize.hh"
-//#include "G4GeneralParticleSource.hh"
-#include "PhotonJetPrimaryGenerator.hh"
+#include "G4GeneralParticleSource.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 PrimaryGeneratorAction::PrimaryGeneratorAction()
  : G4VUserPrimaryGeneratorAction(),
-//   fParticleGun(0)
-   fPrimaryGenerator(nullptr)
+   fParticleGun(0)
 {
-  fPrimaryGenerator = new PhotonJetPrimaryGenerator();
-//  m_particleSource = new G4GeneralParticleSource();
+  m_particleSource = new G4GeneralParticleSource();
 
   /*
   G4int nofParticles = 1;
@@ -71,8 +68,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction()
 {
-   delete fPrimaryGenerator;
-//  delete m_particleSource;
+  delete m_particleSource;
   //delete fParticleGun;
 }
 
@@ -104,8 +100,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   } 
 
   // Set gun position
-//  m_particleSource->GeneratePrimaryVertex(anEvent);
-  fPrimaryGenerator->GeneratePrimaryVertex(anEvent);
+  m_particleSource->GeneratePrimaryVertex(anEvent);
   //if(anEvent->GetEventID() == 0){ m_primaryParticlePos.clear(); } // clear if at first event                                                
 
   //fParticleGun

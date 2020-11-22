@@ -66,20 +66,6 @@ void RunData::FillPerEvent()
     analysisManager->FillNtupleDColumn(i, fEdep[i]);
   }
   analysisManager->FillNtupleDColumn(kNumCells, GetTotalEnergy());
-  analysisManager->FillNtupleDColumn(kNumCells+1, GetPx_Mom());
-  analysisManager->FillNtupleDColumn(kNumCells+2, GetPy_Mom());
-  analysisManager->FillNtupleDColumn(kNumCells+3, GetPz_Mom());
-  analysisManager->FillNtupleDColumn(kNumCells+4, GetPDG_Mom());
-  analysisManager->FillNtupleDColumn(kNumCells+5, GetKe_Dau1());
-  analysisManager->FillNtupleDColumn(kNumCells+6, GetPx_Dau1());
-  analysisManager->FillNtupleDColumn(kNumCells+7, GetPy_Dau1());
-  analysisManager->FillNtupleDColumn(kNumCells+8, GetPz_Dau1());
-  analysisManager->FillNtupleDColumn(kNumCells+9, GetPDG_Dau1());
-  analysisManager->FillNtupleDColumn(kNumCells+10, GetKe_Dau2());
-  analysisManager->FillNtupleDColumn(kNumCells+11, GetPx_Dau2());
-  analysisManager->FillNtupleDColumn(kNumCells+12, GetPy_Dau2());
-  analysisManager->FillNtupleDColumn(kNumCells+13, GetPz_Dau2());
-  analysisManager->FillNtupleDColumn(kNumCells+14, GetPDG_Dau2());
 
   // for ( G4int i=0; i<kDim; i++) {
   //   // fill histograms

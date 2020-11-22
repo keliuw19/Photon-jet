@@ -30,7 +30,7 @@
 
 #include "DetectorConstruction.hh"
 #include "ActionInitialization.hh"
-#include "PhotonJetPhysicsList.hh"
+#include "PhotonJetPhysics.hh"
 
 #ifdef G4MULTITHREADED
 #include "G4MTRunManager.hh"
@@ -46,6 +46,8 @@
 
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
+
+#include "G4PhysListFactory.hh"
 
 #include "time.h"
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -119,8 +121,13 @@ int main(int argc,char** argv)
   DetectorConstruction* detConstruction = new DetectorConstruction();
   runManager->SetUserInitialization(detConstruction);
 
-  G4VModularPhysicsList* physicsList = new PhotonJetPhysicsList();
+  //G4VModularPhysicsList* physicsList = new PhotonJetPhysicsList();
   //G4VModularPhysicsList* physicsList = new FTFP_BERT; PhotonJetPhysicsList* physicsList = new FTFP_BERT<PhotonJetPhysicsList>();
+  G4PhysListFactory factory;
+  G4VModularPhysicsList* physicsList = factory.GetReferencePhysList("FTFP_BERT");
+
+  PhotonJetPhysics* physicsAxion= new PhotonJetPhysics();
+  physicsList->RegisterPhysics(physicsAxion);
   runManager->SetUserInitialization(physicsList);
     
   ActionInitialization* actionInitialization

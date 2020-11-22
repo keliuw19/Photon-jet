@@ -85,20 +85,6 @@ RunAction::RunAction()
     analysisManager->CreateNtupleDColumn("cell_" + out.str());
   }
   analysisManager->CreateNtupleDColumn("TotalEnergy");
-  analysisManager->CreateNtupleDColumn("Px_Mom" );
-  analysisManager->CreateNtupleDColumn("Py_Mom" );
-  analysisManager->CreateNtupleDColumn("Pz_Mom" );
-  analysisManager->CreateNtupleDColumn("PDG_Mon");
-  analysisManager->CreateNtupleDColumn("Ke_Dau1");
-  analysisManager->CreateNtupleDColumn("Px_Dau1");
-  analysisManager->CreateNtupleDColumn("Py_Dau1");
-  analysisManager->CreateNtupleDColumn("Pz_Dau1");
-  analysisManager->CreateNtupleDColumn("PDG_Dau1");
-  analysisManager->CreateNtupleDColumn("Ke_Dau2");
-  analysisManager->CreateNtupleDColumn("Px_Dau2");
-  analysisManager->CreateNtupleDColumn("Py_Dau2");
-  analysisManager->CreateNtupleDColumn("Pz_Dau2");
-  analysisManager->CreateNtupleDColumn("PDG_Dau2");
   
   // analysisManager->CreateNtupleDColumn("Eabs");
   // analysisManager->CreateNtupleDColumn("Egap");
