@@ -1,0 +1,23 @@
+New Particles : 
+Sd : light scalar; 
+Ad : light pseudoscalar; 
+pi0 : SM neutral pion; 
+
+New parameters : 
+muSd : H-Sd-Sd coupling; 
+muAd : H-Ad-Ad coupling; 
+sh : Sine of th (This parameter is not critical and suggest to keep it as the default value.); 
+d3pi : Effective Ad-3pi0 coupling; 
+=================================================================================================
+CSdaa : 1:turn on Sd-a-a coupling;0:turn off Sd-a-a coupling; 
+CAdaa : 1:turn on Ad-a-a coupling;0:turn off Ad-a-a coupling; 
+CSd2pi : 1:turn on Sd-pi-pi coupling;0:turn off Sd-pi-pi coupling; 
+CAd3pi : 1:turn on Ad-pi-pi-pi coupling;0:turn off Ad-pi-pi-pi coupling 
+================================================================================================= 
+
+Processes : 
+(1) generate g g > h > ad ad, (ad > pi0 pi0 pi0, pi0 > a a) 
+(2) generate g g > h, (h > sd sd, sd > pi0 pi0) 
+(3) generate g g > h, (h > ad ad, ad > a a) 
+(4) generate g g > h, (h > sd sd, sd > a a) 
+
