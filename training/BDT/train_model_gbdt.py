@@ -40,6 +40,8 @@ def usage():
 
 			./BDT_pre.py sig1 sig2 sig3 
 
+			AUTHOR
+			Yanxi Gu <GUYANXI@ustc.edu>
 
 			DATE
 			10 Jan 2021
@@ -73,12 +75,13 @@ def main():
     # for sklearn data is usually organised into one 2D array of shape (n_samples * n_features)
     # containing all the data and one array of categories of length n_samples
     X_raw = np.concatenate((signal, backgr,signal2))
-    y_raw = np.concatenate((np.ones(signal.shape[0]), np.zeros(backgr.shape[0]),np.ones(signal2.shape[0])*2))
+    y_raw = np.concatenate((np.ones(signal.shape[0]), np.zeros(backgr.shape[0]),np.ones(signal2.shape[0])+1))
     print(len(signal))
 
     print ('part2')
     print(len(y_raw[y_raw==1]))
     print(len(y_raw[y_raw==0]))
+    print(len(y_raw[y_raw==2]))
 
     #imbalanced learn
 #    n_sig = len(y_raw[y_raw==1])
@@ -151,12 +154,12 @@ def main():
     f.close() 
 
     y_predicted = bdt.predict(X_train)
-    print (classification_report(y_train, y_predicted, target_names=["background", "signal","signal2"]))
-    print ("Area under ROC curve: %.4f"%(roc_auc_score(y_train, bdt.decision_function(X_train),multi_class="ovr")))
+    #print (classification_report(y_train, y_predicted, target_names=["background", "signal","signal2"]))
+    #print ("Area under ROC curve: %.4f"%(roc_auc_score(y_train, bdt.decision_function(X_train),multi_class="ovr")))
 
     y_predicted = bdt.predict(X_test)
-    print (classification_report(y_test, y_predicted, target_names=["background", "signal","signal2"]))
-    print ("Area under ROC curve: %.4f"%(roc_auc_score(y_test, bdt.decision_function(X_test),multi_class="ovo")))
+    #print (classification_report(y_test, y_predicted, target_names=["background", "signal","signal2"]))
+    #print ("Area under ROC curve: %.4f"%(roc_auc_score(y_test, bdt.decision_function(X_test),multi_class="ovo")))
 
     decisions1 = bdt.decision_function(X_train)
     decisions2 = bdt.decision_function(X_test)
@@ -208,19 +211,26 @@ def compare_train_test(clf, X_train, y_train, X_test, y_test, savepath, bins=50)
     plt.hist(decisions[1], color='b', alpha=0.5, range=low_high, bins=bins, histtype='stepfilled', density = True, label='Background (train)')
     plt.hist(decisions[2], color='g', alpha=0.5, range=low_high, bins=bins, histtype='stepfilled', density = True, label='signal2 (train)')
     
-    hist, bins = np.histogram(decisions[2], bins=bins, range=low_high, density=True)
-    scale = len(decisions[2])/sum(hist)
+    hist, bins = np.histogram(decisions[3], bins=bins, range=low_high, density=True)
+    scale = len(decisions[3])/sum(hist)
     err = np.sqrt(hist*scale)/scale
 
     width = (bins[1]-bins[0])
     center = (bins[:-1]+bins[1:])/2
     plt.errorbar(center, hist, yerr=err, fmt='o', c='r', label='Signal (test)')
 
-    hist, bins = np.histogram(decisions[3], bins=bins, range=low_high, density=True)
-    scale = len(decisions[3])/sum(hist)
+    hist, bins = np.histogram(decisions[4], bins=bins, range=low_high, density=True)
+    scale = len(decisions[4])/sum(hist)
     err = np.sqrt(hist*scale)/scale
 
     plt.errorbar(center, hist, yerr=err, fmt='o', c='b', label='Background (test)')
+
+    hist, bins = np.histogram(decisions[5], bins=bins, range=low_high, density=True)
+    scale = len(decisions[5])/sum(hist)
+    err = np.sqrt(hist*scale)/scale
+
+    plt.errorbar(center, hist, yerr=err, fmt='o', c='g', label='signal2 (test)')
+  
   
     plt.xlabel("BDT score")
     plt.ylabel("Normalized Unit")
